@@ -1,7 +1,6 @@
 {
   "name": "microblog",
   "version": "1.0.0",
-  "description": "",
   "main": "app.mjs",
   "scripts": {
     "prod": "node app.mjs",
@@ -12,6 +11,16 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
-    "multer": "^1.4.4-lts.1"
+    "multer": "^1.4.4-lts.1",
+    "nedb": "^1.8.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "description": "",
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "chai-http": "^4.4.0",
+    "mocha": "^10.2.0"
   }
 }

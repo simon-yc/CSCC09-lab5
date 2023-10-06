@@ -31,7 +31,7 @@ function updateMessages() {
       elmt.id = "msg" + message._id;
       elmt.innerHTML = `
                 <div class="message_user">
-                    <img class="message_picture" src="media/user.png" alt="${message.username}">
+                    <img class="message_picture" src="/api/users/${message.username}/profile/picture/" alt="${message.username}">
                     <div class="message_username">${message.username}</div>
                 </div>
                 <div class="message_content">${message.content}</div>
