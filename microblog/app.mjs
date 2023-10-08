@@ -141,7 +141,8 @@ app.delete("/api/messages/:id/", function (req, res, next) {
       { _id: message._id },
       { multi: false },
       function (err, num) {
-        res.json(message);
+        if (err) return res.status(500).end(err);
+        return res.json(message);
       }
     );
   });

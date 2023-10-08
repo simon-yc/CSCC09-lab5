@@ -25,7 +25,7 @@ describe("User and Message API Testing", () => {
         .attach("picture", "uploads/test-picture.png")
         .end(function (err, res) {
           expect(res).to.have.status(200);
-          expect(res.body).to.have.property("username", "testuser");
+          expect(res).to.redirect;
           done();
         });
     });
