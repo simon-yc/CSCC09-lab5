@@ -22,7 +22,7 @@ describe("User and Message API Testing", () => {
         .request(server)
         .post("/api/users/")
         .field("username", "testuser")
-        .attach("picture", "uploads/test-picture.png")
+        .attach("picture", "test/picture/test-picture.png")
         .end(function (err, res) {
           expect(res).to.have.status(200);
           expect(res).to.redirect;
